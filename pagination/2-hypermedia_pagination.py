@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Module for the task 1."""
-import math
 
+import math
 import csv
 from typing import List, Dict
 
@@ -53,7 +53,6 @@ class Server:
         data = self.dataset()
 
         total_pages = math.ceil(len(self.dataset()) / page_size)
-
 
         next_page = page + 1 if page < total_pages else None
         prev_page = page - 1 if page > 1 else None
