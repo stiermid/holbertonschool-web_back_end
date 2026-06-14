@@ -4,9 +4,11 @@
 import csv
 from typing import List
 
+
 def index_range(page, page_size):
     """Index_range function."""
     return (page_size * (page - 1), page_size * page)
+
 
 class Server:
     """Server class to paginate a database of popular baby names.
@@ -32,7 +34,7 @@ class Server:
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
-        
+
         start, end = index_range(page, page_size)
         dataset = self.dataset()
 
