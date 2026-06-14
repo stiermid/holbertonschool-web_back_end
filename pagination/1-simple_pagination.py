@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
+"""Module for the task 1."""
+
 import csv
-import math
 from typing import List
 
 def index_range(page, page_size):
